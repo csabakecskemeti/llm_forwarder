@@ -1,21 +1,23 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
-    name="llm_forwarder",
-    version="0.1.1",
-    description="LLM Forwarder with configurable external function",
-    author="Your Name",
+    name="llm-forwarder",
+    version="0.1.0",
+    author="Csaba Kecskemeti",
+    description="A configurable forwarder for OpenAI-compatible LLM requests",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/csabakecskemeti/llm_forwarder",
     packages=find_packages(),
     install_requires=[
-        "Flask>=2.0.0",
-        "openai>=0.27.0"
+        "Flask>=2.0",
+        "openai",
+        # Add any other dependencies here
     ],
-    entry_points={
-        'console_scripts': [
-            'llm-forwarder=llm_forwarder.server:main'
-        ],
-    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.7",
 )
 
