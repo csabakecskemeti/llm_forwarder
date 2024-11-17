@@ -16,3 +16,9 @@ To install `LLMForwarder`, use pip:
 ```bash
 pip install llm-forwarder
 
+## More info
+#### Pypy
+[llm-forwarder](https://pypi.org/project/llm-forwarder/)
+
+#### Homepage
+[devquasar.com/llmforwarder](https://devquasar.com/llmforwarder/)
